@@ -27,8 +27,8 @@ Configurable options:
 
 ```ruby
 set :goenv_type, :user # or :system, depends on your goenv setup
-set :goenv_node, '1.14'
-set :goenv_map_bins, %w{node npm yarn}
+set :goenv_go_version, '1.14.0'
+set :goenv_map_bins, %w{go}
 ```
 
 If your goenv is located in some custom path, you can use `goenv_custom_path` to set it.
