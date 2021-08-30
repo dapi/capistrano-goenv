@@ -6,12 +6,12 @@ require 'capistrano-goenv/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-goenv'
-  spec.version       = CapistranoNvm::VERSION
-  spec.authors       = ['Koen Punt']
-  spec.email         = ['me@koen.pt']
+  spec.version       = CapistranoGoenv::VERSION
+  spec.authors       = ['Koen Punt', 'Danil Pismenny']
+  spec.email         = ['me@koen.pt', 'danil@brandymint.ru']
   spec.description   = %q{goenv support for Capistrano 3.x}
   spec.summary       = %q{goenv support for Capistrano 3.x}
-  spec.homepage      = 'https://github.com/koenpunt/capistrano-goenv'
+  spec.homepage      = 'https://github.com/dapi/capistrano-goenv'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
