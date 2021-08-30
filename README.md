@@ -1,6 +1,6 @@
-# Capistrano::nvm
+# Capistrano::goenv
 
-[nvm](https://github.com/creationix/nvm) support for Capistrano 3.x
+[goenv](https://github.com/creationix/goenv) support for Capistrano 3.x
 
 ## Installation
 
@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'capistrano', '~> 3.1'
-gem 'capistrano-nvm', require: false
+gem 'capistrano-goenv', require: false
 ```
 
 And then execute:
@@ -20,18 +20,18 @@ And then execute:
 Require in `Capfile` to use the default task:
 
 ```ruby
-require 'capistrano/nvm'
+require 'capistrano/goenv'
 ```
 
 Configurable options:
 
 ```ruby
-set :nvm_type, :user # or :system, depends on your nvm setup
-set :nvm_node, 'v0.10.21'
-set :nvm_map_bins, %w{node npm yarn}
+set :goenv_type, :user # or :system, depends on your goenv setup
+set :goenv_node, '1.14'
+set :goenv_map_bins, %w{node npm yarn}
 ```
 
-If your nvm is located in some custom path, you can use `nvm_custom_path` to set it.
+If your goenv is located in some custom path, you can use `goenv_custom_path` to set it.
 
 ## Contributing
 
